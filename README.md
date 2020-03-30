@@ -11,4 +11,15 @@
    **Username**: automation@gymondo.de
    
    **Password**: automation
+   
+### How to launch tests
+1) Change directory in terminal to **mobile-android-automation-challenge** or better open project in Android studio
+2) Launch android emulator (we use TestButler which is not working with physical device without hacks).
+
+4) When you changed directory in terminal to **mobile-android-automation-challenge** enter command
+```
+bash
+adb shell mkdir /sdcard/allure-results && ./gradlew connectedCheck && adb pull /sdcard/allure-results && ./gradlew allureServe  
+
+```
 
