@@ -17,8 +17,7 @@
 2) Launch android emulator (we use TestButler which is not working with physical device without hacks).
 
 4) When you changed directory in terminal to **mobile-android-automation-challenge** enter command
-```
-bash
+```bash
 adb shell mkdir /sdcard/allure-results && ./gradlew connectedCheck && adb pull /sdcard/allure-results && ./gradlew allureServe  
 
 ```
